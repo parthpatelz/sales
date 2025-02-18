@@ -1,0 +1,13 @@
+package com.example.transactioninventoryadaptor;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class TransactionInventoryAdaptorApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

@@ -1,0 +1,42 @@
+application:
+  name: sales-order-tracker-Prod
+
+taxes:
+  provincial: 8
+  federal: 5
+
+application-config:
+  days: Saturday, Sunday, Monday, tuesday
+  skuList:
+    -
+      sku: 1001
+      description: "Coupon"
+    -
+      sku: 1002
+      description: "Gift Card"
+    -
+      sku: 1003
+      description: "Warranty"
+
+canada-taxes:
+  taxMap:
+    Ontario:
+      province: ON
+      taxes: 8
+    BC:
+      province: BC
+      taxes: 7
+    Alberta:
+      province: AB
+      taxes: 5
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/week9
+    username: humber
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
